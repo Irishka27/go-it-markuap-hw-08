@@ -55,6 +55,12 @@
   &__item:first-child {
     margin-right: 50px;
   }
+  @media screen and(min-width:768px) {
+    display: block;
+  }
+  @media screen and(min-width:1200px) {
+    display: flex;
+  }
 }
 .navigation__item:not(last-child) {
   margin-right: 50px;
@@ -79,21 +85,38 @@
   content: '';
   position: absolute;
   width: auto;
-  bottom: -7px;
+  bottom: -24px;
   display: block;
   width: 100%;
   height: 4px;
   background: #2196f3;
   border-radius: 2px;
+  @media screen and(min-width:1200px) {
+    bottom: -8px;
+  }
 }
 .menu-nav {
   display: none;
+  @media screen and(min-width:768px) {
+    display: flex;
+  }
 }
-.menu-open {
+.menu-open,
+.menu-close {
   width: 40px;
   height: 40px;
   border: none;
   background-color: #fff;
+}
+.menu-open {
+  @media screen and(min-width:768px) {
+    display: none;
+  }
+}
+.menu-close {
+  right: 15px;
+  position: absolute;
+  // top: -37px;
 }
 .set {
   width: 24px;
@@ -102,4 +125,85 @@
     fill: var(--accent-color);
     cursor: pointer;
   }
+}
+.mob-menu {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 999;
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  @media screen and(min-width:768px) {
+    display: none;
+  }
+}
+.mob-menu-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.mob-menu-item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+.tel {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.mail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.mob-social-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.mob-contacts-list {
+  margin-bottom: 64px;
+}
+.mob-contacts-item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+.mob-social {
+  display: flex;
+  margin-bottom: 10px;
+}
+.mob-social-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+    .mob-social-link {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+      padding-right: 10px;
+    }
+  }
+}
+.mob-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }

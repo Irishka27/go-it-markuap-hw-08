@@ -9,11 +9,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+
 .address {
   font-style: normal;
   font-weight: normal;
@@ -21,9 +17,11 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  text-align: center;
 }
 .footer-list {
   padding-top: 20px;
+  text-align: left;
 }
 .footer-contacts {
   font-style: normal;
@@ -32,4 +30,21 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.logo-link-footer {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-left: 29px;
+  @media screen and(min-width:1200px) {
+    margin-left: 0px;
+  }
+}
+.footer-flex {
+  @media screen and(min-width:1200px) {
+    display: flex;
+  }
 }

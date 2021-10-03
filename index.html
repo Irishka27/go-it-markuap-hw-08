@@ -51,47 +51,51 @@
          </button>
        
     </div>
-    <div class="mob-menu">
-     <button type="button" class="menu-open">
+    <div class="mob-menu is-hidden">
+        <div class="container">
+     <button type="button" class="menu-close">
     <svg class="set">
         <use href="./images/sprite.svg#icon-close">
         </use>
     </svg>
     </button>
-    <ul class="mob-menu-list">
+    <ul class="mob-menu-list list">
         <li class="mob-menu-item">
-            <a href="" class="mob-menu-link">Студия</a>
+            <a href="" class="mob-menu-link link">Студия</a>
         </li>
         <li class="mob-menu-item">
-            <a href="" class="mob-menu-link">Портфолио</a>
+            <a href="" class="mob-menu-link link">Портфолио</a>
         </li>
         <li class="mob-menu-item">
-            <a href="" class="mob-menu-link">Контакты</a>
+            <a href="" class="mob-menu-link link">Контакты</a>
         </li>
     </ul>
-    <ul class="mob-contacts-list">
+    <div class="mob-menu-bottom">
+    <ul class="mob-contacts-list list">
         <li class="mob-contacts-item">
-            <a href="" class="mob-cotacts-link">+38 096 111 11 11</a>
+            <a href="" class="mob-cotacts-link link tel">+38 096 111 11 11</a>
         </li>
         <li class="mob-contacts-item">
-            <a href="" class="mob-cotacts-link">info@devstudio.com</a>
+            <a href="" class="mob-cotacts-link link mail">info@devstudio.com</a>
         </li>
 
     </ul>
-    <ul class="mob-social">
+    <ul class="mob-social list">
         <li class="mob-social-item">
-            <a href="" class="mob-social-link">Instagram</a>
+            <a href="" class="mob-social-link link">Instagram</a>
         </li>
         <li class="mob-social-item">
-            <a href="" class="mob-social-link">Twitter</a>
+            <a href="" class="mob-social-link link">Twitter</a>
         </li>
         <li class="mob-social-item">
-            <a href="" class="mob-social-link">Facebook</a>
+            <a href="" class="mob-social-link link">Facebook</a>
         </li>
         <li class="mob-social-item">
-            <a href="" class="mob-social-link">LinkedIn</a>
+            <a href="" class="mob-social-link link">LinkedIn</a>
         </li>
     </ul>
+    </div>
+    </div>
     </div>
     </header> 
     <!-- Main container -->
@@ -460,12 +464,13 @@
         </section>
    
     </main>
-Footer -->
-<!-- <footer class="footer-all">
+<!-- Footer -->
+<footer class="footer-all">
     <div class="footer-wrap container">
-    <div class="footer">
-    <a href="" class="logo-link"><span class="logo-blue">Web</span><span class="logo-white">Studio</span></a>
+    
+  
     <address>
+        <a href="" class="logo-link-footer"><span class="logo-blue">Web</span><span class="logo-white">Studio</span></a>
         <ul class="footer-list list">
             <li class="footer-item"><a class="address">г. Киев, пр-т Леси Украинки, 26</a></li>
             <li class="footer-item"><a href="mailto:info@devstudio.com" class="footer-contacts">info@devstudio.com</a></li>
@@ -473,7 +478,7 @@ Footer -->
         </ul>
 
     </address>
-    </div>
+   
     <div class="footer-icon">
         <p>присоединяйтесь</p>
         <ul class="footer-socials socials-list list">
@@ -538,7 +543,7 @@ Footer -->
             
     </div>
     </div>
-</footer> -->
+</footer>
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <p>Оставьте свои данные, мы вам перезвоним</p>
@@ -587,5 +592,6 @@ Footer -->
     </div>
     </div>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>
