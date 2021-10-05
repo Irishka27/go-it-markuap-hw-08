@@ -223,8 +223,8 @@ a {
 }
 
 .set {
-  width: 24px;
-  height: 16px;
+  width: 34px;
+  height: 25px;
 }
 .set:hover {
   fill: var(--accent-color);
@@ -590,8 +590,18 @@ a {
   margin-bottom: 16px;
 }
 
-picture {
-  min-width: 100%;
+.photo {
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .photo {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .photo {
+    width: 270px;
+  }
 }
 
 .custumers {
@@ -651,6 +661,8 @@ picture {
 
 .footer-item {
   margin-bottom: 9px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .footer-all {
@@ -671,7 +683,15 @@ picture {
 
 .footer-list {
   padding-top: 20px;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-list {
+    display: block;
+    text-align: left;
+  }
 }
 
 .footer-contacts {

@@ -3,6 +3,8 @@
 }
 .footer-item {
   margin-bottom: 9px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .footer-all {
   background-color: #2f303a;
@@ -21,7 +23,13 @@
 }
 .footer-list {
   padding-top: 20px;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media screen and(min-width:1200px) {
+    display: block;
+    text-align: left;
+  }
 }
 .footer-contacts {
   font-style: normal;
